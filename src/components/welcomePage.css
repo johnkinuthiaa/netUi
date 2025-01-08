@@ -1,0 +1,11 @@
+
+.welcomeImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 300px auto;
+
+}
+
+@media  screen and (max-width: 768px) {
+}

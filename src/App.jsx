@@ -1,12 +1,13 @@
 
 import './App.css'
+import WelcomePage from "./components/WelcomePage.jsx";
 
 function App() {
 
 
   return (
     <>
-
+      <WelcomePage/>
     </>
   )
 }
