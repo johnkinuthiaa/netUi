@@ -49,78 +49,78 @@ const HomePage =()=>{
             <div className={"trending"} style={{display: "flex", flexDirection: "column", color: "#fff"}}>
                 <h2>Trending Now</h2>
                 <div style={{display: "flex", overflow: "scroll", scrollBehavior: "smooth", scrollbarWidth: "none"}}>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
                 </div>
             </div>
             <div className={"trending"} style={{display: "flex", flexDirection: "column", color: "#fff"}}>
                 <h2>Top 10 in kenya Today</h2>
                 <div style={{display: "flex", overflow: "scroll", scrollBehavior: "smooth", scrollbarWidth: "none"}}>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
                 </div>
             </div>
             <div className={"trending"} style={{display: "flex", flexDirection: "column", color: "#fff"}}>
                 <h2>My List</h2>
                 <div style={{display: "flex", overflow: "scroll", scrollBehavior: "smooth", scrollbarWidth: "none"}}>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
                 </div>
             </div>
             <div className={"trending"} style={{display: "flex", flexDirection: "column", color: "#fff"}}>
                 <h2>Netflix Originals</h2>
                 <div style={{display: "flex", overflow: "scroll", scrollBehavior: "smooth", scrollbarWidth: "none"}}>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
                 </div>
             </div>
             <div className={"trending"} style={{display: "flex", flexDirection: "column", color: "#fff"}}>
                 <h2>New Releases</h2>
                 <div style={{display: "flex", overflow: "scroll", scrollBehavior: "smooth", scrollbarWidth: "none"}}>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
                 </div>
             </div>
             <div className={"trending"} style={{display: "flex", flexDirection: "column", color: "#fff"}}>
                 <h2>TV Thrillers & Mysteries</h2>
                 <div style={{display: "flex", overflow: "scroll", scrollBehavior: "smooth", scrollbarWidth: "none"}}>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
                 </div>
             </div>
             <div className={"trending"} style={{display: "flex", flexDirection: "column", color: "#fff"}}>
                 <h2>Us Tv shows</h2>
                 <div style={{display: "flex", overflow: "scroll", scrollBehavior: "smooth", scrollbarWidth: "none"}}>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
-                    <MovieContainer url={"https://dog.ceo/api/breeds/image/random"}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
+                    <MovieContainer url={""}/>
                 </div>
             </div>
             <BottomNav/>

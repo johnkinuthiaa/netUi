@@ -49,7 +49,9 @@ const SearchPage =()=>{
                                setSearchMovie(e.target.value)
                            }}
                            placeholder={"search for a show, movie,genre e.t.c"}/>
-                    <button type={"submit"} style={{color:"#fff"}} onClick={(e)=>{
+                    <button type={"submit"} style={{color:"#fff",marginLeft:"-60px",padding:"5px",
+                        cursor:"pointer",backgroundColor:"transparent",borderRadius:"5px"
+                    }} onClick={(e)=>{
                         e.preventDefault()
                         getSearchMovie()
                     }}> search</button>
@@ -61,7 +63,7 @@ const SearchPage =()=>{
             {topSearches.length>1?(
                 <div style={{color:"#fff",display:"flex",flexDirection:"column",scrollBehavior:"smooth",scrollbarWidth:"none",overflow:"scroll"}}>
                     {topSearches.map((movie)=>(
-                        <MovieCard title={movie.title} primaryImage={movie.primaryImage} id={movie.id}/>
+                        <MovieCard title={movie.title || movie.originalTitle } primaryImage={movie.primaryImage} id={movie.id}/>
                     ))}
                 </div>
             ):(
