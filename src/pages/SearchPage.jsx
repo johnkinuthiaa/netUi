@@ -4,6 +4,7 @@ import KeyboardVoiceIcon from '@mui/icons-material/KeyboardVoice';
 import "./styles/searchPage.css"
 import useSWR from "swr";
 import Loading from "../components/Loading.jsx";
+import MovieCard from "../components/MovieCard.jsx";
 const SearchPage =()=>{
     const[searchMovie,setSearchMovie]=useState("")
     const[topSearches,setTopSearches]=useState([])
@@ -43,9 +44,9 @@ const SearchPage =()=>{
             </div>
             <h3>Top Searches</h3>
             {topSearches.length>1?(
-                <div style={{color:"#fff"}}>
+                <div style={{color:"#fff",display:"flex",flexDirection:"column"}}>
                     {topSearches.map((movie)=>(
-                        <p id={movie.id}>{movie.title}</p>
+                        <MovieCard title={movie.title} primaryImage={movie.primaryImage} id={movie.id}/>
                     ))}
                 </div>
             ):(
