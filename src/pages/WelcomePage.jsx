@@ -1,4 +1,4 @@
-import "./welcomePage.css"
+import "./styles/welcomePage.css"
 const WelcomePage =()=>{
     return(
         <div className={"welcomeImage"}>

@@ -1,0 +1,47 @@
+import HomeIcon from '@mui/icons-material/Home';
+import SearchIcon from '@mui/icons-material/Search';
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+import DownloadIcon from '@mui/icons-material/Download';
+import MenuIcon from '@mui/icons-material/Menu';
+import "./styles/bottomNav.css"
+const BottomNav =()=>{
+    return(
+        <div className={"bottom__nav"}>
+            <nav >
+                <ul>
+                    <li>
+                        <div>
+                            <HomeIcon/>
+                            <h4>Home</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <SearchIcon/>
+                            <h4>Search</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <VideoLibraryIcon/>
+                            <h4>Coming soon </h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <DownloadIcon/>
+                            <h4>Downloads</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <MenuIcon/>
+                            <h4>More</h4>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    )
+}
+export default BottomNav

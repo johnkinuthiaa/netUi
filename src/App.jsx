@@ -1,8 +1,8 @@
 
 import './App.css'
-import WelcomePage from "./components/WelcomePage.jsx";
+import WelcomePage from "./pages/WelcomePage.jsx";
 import HomeNavbar from "./components/HomeNavbar.jsx";
-import HomePage from "./components/HomePage.jsx";
+import HomePage from "./pages/HomePage.jsx";
 
 function App() {
 

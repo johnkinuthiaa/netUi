@@ -1,0 +1,24 @@
+@media  screen and (max-width: 768px){
+    .nav__items{
+        display: flex;
+        text-decoration: none;
+        background-color: transparent;
+        color: #fff;
+        justify-content: space-evenly;
+        padding: 5px;
+        margin-top: 30px;
+        position: sticky;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    nav>ul>h3{
+        background-color: transparent;
+
+    }
+    nav>ul>img{
+        background-color: transparent;
+    }
+
+}
+
