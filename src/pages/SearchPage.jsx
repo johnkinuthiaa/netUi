@@ -11,10 +11,11 @@ const SearchPage =()=>{
 
     const FETCH_TOP_MOVIES_ENDPOINT ="/most-popular-movies"
     const MOVIES_URL ="https://imdb236.p.rapidapi.com/imdb"
+    const SEARCH_ENDPOINT =`/search?originalTitle=${searchMovie}&sortField=id&sortOrder=ASC`
 
     const myHeaders =new Headers()
-    // myHeaders.append('x-rapidapi-key','d00a19a430msh8b8a1cc874579dap1e2e57jsnea5aac7757bb')
-    // myHeaders.append('x-rapidapi-host', 'imdb236.p.rapidapi.com')
+    myHeaders.append('x-rapidapi-key','bb13ec3903mshaebfd206c231e2dp1768fejsn3a17b4d8ef87')
+    myHeaders.append('x-rapidapi-host', 'imdb236.p.rapidapi.com')
 
 
     const getLatestMovies =(async ()=>{
@@ -25,9 +26,18 @@ const SearchPage =()=>{
         const data =await response.json()
         setTopSearches(data)
     })
+
     const { isLoading, error } = useSWR('https://imdb236.p.rapidapi.com/imdb/most-popular-movies', getLatestMovies)
     if(isLoading) return <Loading/>
     if(error) return <div> Error</div>
+
+    const getSearchMovie =(async ()=>{
+        const response =await fetch(MOVIES_URL+SEARCH_ENDPOINT,{
+            headers:myHeaders
+        })
+        const data =await response.json()
+        setTopSearches(data.results)
+    })
 
     return(
         <div className={"searchPage__container"}>
@@ -39,6 +49,10 @@ const SearchPage =()=>{
                                setSearchMovie(e.target.value)
                            }}
                            placeholder={"search for a show, movie,genre e.t.c"}/>
+                    <button type={"submit"} style={{color:"#fff"}} onClick={(e)=>{
+                        e.preventDefault()
+                        getSearchMovie()
+                    }}> search</button>
                 </div>
                 <KeyboardVoiceIcon/>
 
