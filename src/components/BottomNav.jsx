@@ -24,19 +24,19 @@ const BottomNav =()=>{
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div onClick={()=>navigate("/comingSoon")}>
                             <VideoLibraryIcon/>
                             <h4>Coming soon </h4>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div onClick={()=>navigate("/downloads")}>
                             <DownloadIcon/>
                             <h4>Downloads</h4>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div onClick={()=>navigate("/more")}>
                             <MenuIcon/>
                             <h4>More</h4>
                         </div>

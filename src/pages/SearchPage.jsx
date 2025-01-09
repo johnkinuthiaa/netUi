@@ -13,7 +13,8 @@ const SearchPage =()=>{
     const MOVIES_URL ="https://imdb236.p.rapidapi.com/imdb"
 
     const myHeaders =new Headers()
-
+    // myHeaders.append('x-rapidapi-key','d00a19a430msh8b8a1cc874579dap1e2e57jsnea5aac7757bb')
+    // myHeaders.append('x-rapidapi-host', 'imdb236.p.rapidapi.com')
 
 
     const getLatestMovies =(async ()=>{
@@ -42,9 +43,9 @@ const SearchPage =()=>{
                 <KeyboardVoiceIcon/>
 
             </div>
-            <h3>Top Searches</h3>
+            <h3 style={{margin:"20px 20px 20px 5px"}}>Top Searches</h3>
             {topSearches.length>1?(
-                <div style={{color:"#fff",display:"flex",flexDirection:"column"}}>
+                <div style={{color:"#fff",display:"flex",flexDirection:"column",scrollBehavior:"smooth",scrollbarWidth:"none",overflow:"scroll"}}>
                     {topSearches.map((movie)=>(
                         <MovieCard title={movie.title} primaryImage={movie.primaryImage} id={movie.id}/>
                     ))}
