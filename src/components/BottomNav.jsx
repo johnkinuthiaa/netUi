@@ -4,19 +4,21 @@ import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import DownloadIcon from '@mui/icons-material/Download';
 import MenuIcon from '@mui/icons-material/Menu';
 import "./styles/bottomNav.css"
+import {useNavigate} from "react-router";
 const BottomNav =()=>{
+    const navigate =useNavigate()
     return(
         <div className={"bottom__nav"}>
             <nav >
                 <ul>
                     <li>
-                        <div>
+                        <div onClick={()=>navigate("/")}>
                             <HomeIcon/>
                             <h4>Home</h4>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div onClick={()=>navigate("/search")}>
                             <SearchIcon/>
                             <h4>Search</h4>
                         </div>

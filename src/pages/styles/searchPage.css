@@ -1,0 +1,35 @@
+@media screen and (max-width: 768px){
+    .searchPage__container{
+        display: flex;
+        flex-direction: column;
+        color:#ffffff;
+        margin-top: 20px;
+
+    }
+    .searchPage__container>.searchBar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        background-color: rgb(66,66,66,100%);
+        padding: 5px;
+        height: 50px;
+    }
+    .searchBar__container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .searchPage__container>.searchBar__container>*{
+        background-color: rgb(66,66,66,100%);
+    }
+    .searchBar__container>input{
+        border: none;
+        outline:none;
+        cursor: text;
+        padding: 10px;
+        width: 358px;
+        color: white;
+        background-color:rgb(66,66,66,100%);
+    }
+}
