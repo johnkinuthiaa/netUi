@@ -25,7 +25,7 @@ const HomePage =()=>{
         <div className={"homeContainer"}>
             <HomeNavbar/>
             <div>
-                <img src={"src/assets/homeImage.svg"} className={"homeImage"}/>
+                <img src={"https://github.com/johnkinuthiaa/netUi/blob/main/src/assets/homeImage.svg"} className={"homeImage"}/>
             </div>
             <div className={"play"}>
                 <div>
