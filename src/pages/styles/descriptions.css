@@ -1,0 +1,58 @@
+@media screen and (max-width: 768px) {
+    .description__page{
+        color: #ffffff;
+        margin-bottom: 100px;
+        scroll-behavior: smooth;
+        overflow: scroll;
+        scrollbar-width: none;
+        padding: 5px;
+    }
+    .description__page>div,.description__page>p{
+        margin-left: 5px;
+
+
+    }
+    .movie__title{
+        font-weight: normal;
+        color:rgb(245, 245, 247);
+    }
+    .movie__interests{
+        display: flex;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        gap: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        align-items: center;
+
+    }
+    .interest{
+        padding: 5px 10px;
+        border: 1px solid rgb(245, 245, 245);
+        border-radius: 20px;
+        width: fit-content;
+    }
+    .prod__details{
+        display: block;
+    }
+    .prod__details>ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+    }
+    .prod__details>ul>li{
+        margin-left: 12px;
+    }
+    .ratings{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+
+    }
+    .rating__star{
+        color: yellow;
+        margin-right: 5px;
+    }
+}

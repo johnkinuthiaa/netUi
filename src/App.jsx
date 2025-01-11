@@ -20,6 +20,7 @@ function App() {
             <Route path={"/description"} element={<DescriptionPage/>}/>
             <Route path={"/more"} element={<More/>}/>
             <Route path={"/comingSoon"} element={<ComingSoon/>}/>
+            <Route path={"/description/:id"} element={<DescriptionPage/>}/>
             <Route path={"/downloads"} element={<Downloads/>}/>
         </Routes>
   )

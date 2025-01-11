@@ -6,8 +6,21 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import InfoIcon from '@mui/icons-material/Info';
 import Previews from "../components/Previews.jsx";
 import MovieContainer from "../components/MovieContainer.jsx";
+import {useEffect, useState} from "react";
 const HomePage =()=>{
-
+    const [country,setCountry] =useState("")
+    const [regionName,setRegionName] =useState("")
+    useEffect(() => {
+        getLocation()
+    }, []);
+    const getLocation =(async()=>{
+        const response =await fetch("http://ip-api.com/json/")
+        const data =await response.json()
+        if(data.status ==="success"){
+            setCountry(data.country)
+            setRegionName(data.regionName)
+        }
+    })
     return(
         <div className={"homeContainer"}>
             <HomeNavbar/>
@@ -58,7 +71,7 @@ const HomePage =()=>{
                 </div>
             </div>
             <div className={"trending"} style={{display: "flex", flexDirection: "column", color: "#fff"}}>
-                <h2>Top 10 in kenya Today</h2>
+                <h2>Top 10 in {country} Today</h2>
                 <div style={{display: "flex", overflow: "scroll", scrollBehavior: "smooth", scrollbarWidth: "none"}}>
                     <MovieContainer url={""}/>
                     <MovieContainer url={""}/>

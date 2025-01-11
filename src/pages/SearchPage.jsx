@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import SearchIcon from '@mui/icons-material/Search';
 import KeyboardVoiceIcon from '@mui/icons-material/KeyboardVoice';
 import "./styles/searchPage.css"
@@ -14,7 +14,7 @@ const SearchPage =()=>{
     const SEARCH_ENDPOINT =`/search?originalTitle=${searchMovie}&sortField=id&sortOrder=ASC`
 
     const myHeaders =new Headers()
-    myHeaders.append('x-rapidapi-key','bb13ec3903mshaebfd206c231e2dp1768fejsn3a17b4d8ef87')
+    myHeaders.append('x-rapidapi-key','d00a19a430msh8b8a1cc874579dap1e2e57jsnea5aac7757bb')
     myHeaders.append('x-rapidapi-host', 'imdb236.p.rapidapi.com')
 
 
@@ -61,7 +61,7 @@ const SearchPage =()=>{
             </div>
             <h3 style={{margin:"20px 20px 20px 5px"}}>Top Searches</h3>
             {topSearches.length>1?(
-                <div style={{color:"#fff",display:"flex",flexDirection:"column",scrollBehavior:"smooth",scrollbarWidth:"none",overflow:"scroll"}}>
+                <div style={{color:"#fff",display:"flex",flexDirection:"column",scrollBehavior:"smooth",scrollbarWidth:"none",overflow:"scroll",width:"100%"}}>
                     {topSearches.map((movie)=>(
                         <MovieCard title={movie.title || movie.originalTitle } primaryImage={movie.primaryImage} id={movie.id}/>
                     ))}
