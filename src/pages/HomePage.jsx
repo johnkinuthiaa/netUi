@@ -14,7 +14,7 @@ const HomePage =()=>{
         getLocation()
     }, []);
     const getLocation =(async()=>{
-        const response =await fetch("http://ip-api.com/json/")
+        const response =await fetch("https://ip-api.com/json/")
         const data =await response.json()
         if(data.status ==="success"){
             setCountry(data.country)

@@ -44,26 +44,40 @@ const SearchPage =()=>{
             <div className={"searchBar"}>
                 <div className={"searchBar__container"}>
                     <SearchIcon/>
-                    <input type={"search"}
-                           onChange={(e)=>{
-                               setSearchMovie(e.target.value)
-                           }}
-                           placeholder={"search for a show, movie,genre e.t.c"}/>
-                    <button type={"submit"} style={{color:"#fff",marginLeft:"-60px",padding:"5px",
-                        cursor:"pointer",backgroundColor:"transparent",borderRadius:"5px"
-                    }} onClick={(e)=>{
+                    <form onSubmit={(e)=>{
                         e.preventDefault()
                         getSearchMovie()
-                    }}> search</button>
+                    }}>
+                        <input type={"search"}
+                               onChange={(e) => {
+                                   setSearchMovie(e.target.value)
+                               }}
+                               placeholder={"search for a show, movie,genre e.t.c"}/>
+                        {/*<button type={"submit"} style={{*/}
+                        {/*    color: "#fff", marginLeft: "-60px", padding: "5px",*/}
+                        {/*    cursor: "pointer", backgroundColor: "transparent", borderRadius: "5px"*/}
+                        {/*}}> search</button>*/}
+
+                    </form>
+
                 </div>
                 <KeyboardVoiceIcon/>
 
             </div>
-            <h3 style={{margin:"20px 20px 20px 5px"}}>Top Searches</h3>
-            {topSearches.length>1?(
-                <div style={{color:"#fff",display:"flex",flexDirection:"column",scrollBehavior:"smooth",scrollbarWidth:"none",overflow:"scroll",width:"100%"}}>
-                    {topSearches.map((movie)=>(
-                        <MovieCard title={movie.title || movie.originalTitle } primaryImage={movie.primaryImage} id={movie.id}/>
+            <h3 style={{margin: "20px 20px 20px 5px"}}>Top Searches</h3>
+            {topSearches.length > 1 ? (
+                <div style={{
+                    color: "#fff",
+                    display: "flex",
+                    flexDirection: "column",
+                    scrollBehavior: "smooth",
+                    scrollbarWidth: "none",
+                    overflow: "scroll",
+                    width: "100%"
+                }}>
+                    {topSearches.map((movie) => (
+                        <MovieCard title={movie.title || movie.originalTitle} primaryImage={movie.primaryImage}
+                                   id={movie.id}/>
                     ))}
                 </div>
             ):(
