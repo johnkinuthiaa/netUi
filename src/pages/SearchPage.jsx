@@ -14,8 +14,8 @@ const SearchPage =()=>{
     const SEARCH_ENDPOINT =`/search?originalTitle=${searchMovie}&sortField=id&sortOrder=ASC`
 
     const myHeaders =new Headers()
-    myHeaders.append('x-rapidapi-key','d00a19a430msh8b8a1cc874579dap1e2e57jsnea5aac7757bb')
-    myHeaders.append('x-rapidapi-host', 'imdb236.p.rapidapi.com')
+    // myHeaders.append('x-rapidapi-key','d00a19a430msh8b8a1cc874579dap1e2e57jsnea5aac7757bb')
+    // myHeaders.append('x-rapidapi-host', 'imdb236.p.rapidapi.com')
 
 
     const getLatestMovies =(async ()=>{
@@ -43,8 +43,11 @@ const SearchPage =()=>{
         <div className={"searchPage__container"}>
             <div className={"searchBar"}>
                 <div className={"searchBar__container"}>
-                    <SearchIcon/>
-                    <form onSubmit={(e)=>{
+                    <div className={"keyboard__icon"}>
+                        <SearchIcon/>
+                    </div>
+
+                    <form onSubmit={(e) => {
                         e.preventDefault()
                         getSearchMovie()
                     }}>
@@ -53,15 +56,13 @@ const SearchPage =()=>{
                                    setSearchMovie(e.target.value)
                                }}
                                placeholder={"search for a show, movie,genre e.t.c"}/>
-                        {/*<button type={"submit"} style={{*/}
-                        {/*    color: "#fff", marginLeft: "-60px", padding: "5px",*/}
-                        {/*    cursor: "pointer", backgroundColor: "transparent", borderRadius: "5px"*/}
-                        {/*}}> search</button>*/}
-
                     </form>
 
                 </div>
-                <KeyboardVoiceIcon/>
+                <div className={"keyboard__icon"}>
+                    <KeyboardVoiceIcon/>
+                </div>
+
 
             </div>
             <h3 style={{margin: "20px 20px 20px 5px"}}>Top Searches</h3>

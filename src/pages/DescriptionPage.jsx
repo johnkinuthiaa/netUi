@@ -13,8 +13,8 @@ const DescriptionPage =()=>{
     const [movie,setMovie] =useState({})
 
     const myHeaders =new Headers()
-    myHeaders.append('x-rapidapi-key','d00a19a430msh8b8a1cc874579dap1e2e57jsnea5aac7757bb')
-    myHeaders.append('x-rapidapi-host', 'imdb236.p.rapidapi.com')
+    // myHeaders.append('x-rapidapi-key','d00a19a430msh8b8a1cc874579dap1e2e57jsnea5aac7757bb')
+    // myHeaders.append('x-rapidapi-host', 'imdb236.p.rapidapi.com')
     const fetchMovieById =(async ()=>{
         const response =await fetch(MOVIES_URL+FETCH_MOVIES_ENDPOINT,{
             method:"GET",
