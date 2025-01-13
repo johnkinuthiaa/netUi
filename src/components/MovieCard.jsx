@@ -20,7 +20,7 @@ const MovieCard =({title,primaryImage,id})=>{
     const navigate =useNavigate()
     return(
         <div style={movieCard} id={id} onClick={()=>navigate(`/description/${id}`)}>
-            <img alt={title} src={primaryImage} style={imageStyles}/>
+            <img alt={title} src={`https://image.tmdb.org/t/p/original/${primaryImage}`} style={imageStyles}/>
             <h3 style={{backgroundColor:"transparent",marginLeft:"10px"}}>{title}</h3>
         </div>
     )

@@ -77,7 +77,7 @@ const SearchPage =()=>{
                     width: "100%"
                 }}>
                     {topSearches.map((movie) => (
-                        <MovieCard title={movie.title || movie.originalTitle} primaryImage={movie.primaryImage}
+                        <MovieCard title={movie.title || movie.originalTitle} primaryImage={movie.poster_path}
                                    id={movie.id}/>
                     ))}
                 </div>
