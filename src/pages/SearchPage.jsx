@@ -11,11 +11,13 @@ const SearchPage =()=>{
 
     const FETCH_TOP_MOVIES_ENDPOINT ="/most-popular-movies"
     const MOVIES_URL ="https://imdb236.p.rapidapi.com/imdb"
-    const SEARCH_ENDPOINT =`/search?originalTitle=${searchMovie}&sortField=id&sortOrder=ASC`
 
     const myHeaders =new Headers()
     myHeaders.append('x-rapidapi-key','d00a19a430msh8b8a1cc874579dap1e2e57jsnea5aac7757bb')
     myHeaders.append('x-rapidapi-host', 'imdb236.p.rapidapi.com')
+    myHeaders.append("Content-Type","application/json")
+    myHeaders.append("Authorization",'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNTFjNDU0M2QxOWQ3YjcyMDkzODYyZjM2ZWE0OTU3ZCIsIm5iZiI6MTcxNjQ3MjQzOC41Niwic3ViIjoiNjY0ZjRhNzZhYmQ4OWYyMDg3ZWMxNzY2Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.OYWG_dE1lWmPQcCzumYeMN9Oedst8puAZZn59GMnnFQ')
+
 
     const getLatestMovies =(async ()=>{
         const response =await fetch(MOVIES_URL+FETCH_TOP_MOVIES_ENDPOINT,{
@@ -24,6 +26,7 @@ const SearchPage =()=>{
         })
         const data =await response.json()
         setTopSearches(data)
+        console.log(data)
     })
 
     const { isLoading, error } = useSWR('https://imdb236.p.rapidapi.com/imdb/most-popular-movies', getLatestMovies)
@@ -31,7 +34,7 @@ const SearchPage =()=>{
     if(error) return <div> Error</div>
 
     const getSearchMovie =(async ()=>{
-        const response =await fetch(MOVIES_URL+SEARCH_ENDPOINT,{
+        const response =await fetch(`https://api.themoviedb.org/3/search/movie?query=${searchMovie}&include_adult=true&language=en-US&page=1`,{
             headers:myHeaders
         })
         const data =await response.json()
