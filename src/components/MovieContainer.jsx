@@ -8,7 +8,7 @@ const MovieContainer =({url})=>{
     const myHeaders =new Headers()
     const navigate =useNavigate()
     myHeaders.append("Content-Type","application/json")
-    myHeaders.append("Authorization", import.meta.env.REACT_APP_TMDB_API_KEY)
+    myHeaders.append("Authorization",'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNTFjNDU0M2QxOWQ3YjcyMDkzODYyZjM2ZWE0OTU3ZCIsIm5iZiI6MTcxNjQ3MjQzOC41Niwic3ViIjoiNjY0ZjRhNzZhYmQ4OWYyMDg3ZWMxNzY2Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.OYWG_dE1lWmPQcCzumYeMN9Oedst8puAZZn59GMnnFQ')
     const fetchMovies =(async (url)=>{
         const response =await fetch(url,{
             method:"GET",
