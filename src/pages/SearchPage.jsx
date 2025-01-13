@@ -13,8 +13,6 @@ const SearchPage =()=>{
     const MOVIES_URL ="https://imdb236.p.rapidapi.com/imdb"
 
     const myHeaders =new Headers()
-    myHeaders.append('x-rapidapi-key','d00a19a430msh8b8a1cc874579dap1e2e57jsnea5aac7757bb')
-    myHeaders.append('x-rapidapi-host', 'imdb236.p.rapidapi.com')
     myHeaders.append("Content-Type","application/json")
     myHeaders.append("Authorization",'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNTFjNDU0M2QxOWQ3YjcyMDkzODYyZjM2ZWE0OTU3ZCIsIm5iZiI6MTcxNjQ3MjQzOC41Niwic3ViIjoiNjY0ZjRhNzZhYmQ4OWYyMDg3ZWMxNzY2Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.OYWG_dE1lWmPQcCzumYeMN9Oedst8puAZZn59GMnnFQ')
 
