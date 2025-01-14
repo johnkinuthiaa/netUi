@@ -5,10 +5,10 @@
         position: fixed;
         bottom: 0;
         text-decoration: none;
-        gap:5px;
         align-items: center;
         justify-content: space-between;
-        display: flex;
+        display: block;
+        left:0;
     }
     .bottom__nav>*{
         padding: 5px;
